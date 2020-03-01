@@ -1,6 +1,6 @@
 .page-header {
   padding-top: 30px;
-  background-color: $blue-text;
+  background-color: inherit;
 }
 
 .page-header__link {
@@ -12,7 +12,7 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
-    padding-top: 38px;
+    padding-top: 40px;
   }
 
   .page-header__link {
