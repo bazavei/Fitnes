@@ -1,3 +1,129 @@
 .tickets {
   background-color: $gray-background;
+  padding-top: 123px;
+}
+
+.tickets__container {
+  flex-direction: column;
+}
+
+.tickets__tariffs-list,
+.tickets__periods-list {
+  @include resetList;
+  @include flex;
+}
+
+.tickets__wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tickets__title {
+  text-align: center;
+}
+
+.tickets__periods-list {
+  justify-content: space-between;
+  position: relative;
+  width: 30%;
+  padding: 32px 3px 0;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+}
+
+.tickets__period-item {
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(16, 38, 84, 0.5);
+  padding-bottom: 10px;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 118%;
+  //   width: 100%;
+  //   height: 2px;
+  //   background-color: $hover-color;
+
+  // }
+
+  // &::before:hover {
+  //   // content: "";
+  //   // position: absolute;
+  //   // top: 118%;
+  //   // width: 100%;
+  //   // height: 2px;
+  //   // background-color: $hover-color;
+  // }
+
+  &:hover {
+    color: $blue-text;
+    border-bottom: 2px solid $hover-color;
+  }
+}
+
+.tickets__tariffs-list {
+  width: 100%;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+
+.tickets__tariff-item {
+  @include flex;
+  background-color: $white-bg;
+  width: 31.034%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-top: 57px;
+  padding-bottom: 68px;
+}
+
+.tickets__tariff-title {
+  @include roboto-cond;
+  text-align: center;
+  font-weight: 700;
+  color: $blue-text;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.tickets__tariff-description {
+  @include roboto-cond;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+  color: $second-blue-text;
+}
+
+.tickets__tariff-price {
+  @include roboto-cond;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  color: $light-blue-text;
+
+  padding-top: 72px;
+  padding-bottom: 32px;
+
+  &--rub {
+    color: $blue-text;
+  }
+}
+
+.tickets__tariff-buy {
+  color: $blue-text;
+  border-color: $blue-text;
+  padding: 21px 43px;
+  margin: 0 auto;
 }
