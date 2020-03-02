@@ -82,6 +82,8 @@
 // }
 
 .main-block__button {
+  color: $white-text;
+
   padding: 21px 57px;
   margin-top: 48px;
   margin-left: auto;
@@ -89,14 +91,16 @@
 
 .main-block__social-list {
   @include resetList;
-  @include roboto-cond;
   @include flex;
+
   flex-direction: column;
   margin-top: auto;
 }
 
 .main-block__social-link {
   @include roboto-cond;
+  color: $white-text;
+
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;

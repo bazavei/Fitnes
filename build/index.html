@@ -5,12 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-regular.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/bebas-neue-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/bebas-neue-regular.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/bebasneue-regular-webfont.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/bebasneue-regular-webfont.woff" as="font" crossorigin="anonymous"> -->
   <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font" crossorigin="anonymous">
@@ -63,12 +57,35 @@
     </section>
     <section class="gym">
       <div class="container">
-        <h2 class="gym__title section-title">Тренажерный зал</h2>
-        <span class="gym__description">Просторный зал площадью 900 кв/м</span>
-        <p class="gym__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-          Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-          В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
-          Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        <div class="gym__wrapper">
+          <h2 class="gym__title section-title">Тренажерный зал</h2>
+          <span class="gym__description">Просторный зал площадью 900 кв/м</span>
+          <p class="gym__text">Supergym – самый большой фитнес центр за Уралом и&nbsp;идеальное место для укрепления
+            тела и
+            здоровья.
+            Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p class="gym__text gym__text--bottom">
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
+            Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="gym__media">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/about-us-img1-mobile@1x.jpg, img/about-us-img1-mobile@2x.jpg">
+            <source media="(max-width: 1199px)" srcset="img/about-us-img1-tablet@1x.jpg, img/about-us-img1-tablet@2x.jpg">
+            <img class="gym__photo" src="img/about-us-img1@1x.jpg" srcset="img/about-us-img1@2x.jpg" alt="Фото тренажёрного зала" width="660" height="401">
+          </picture>
+          <div class="gym__video">
+            <div class="gym__video-bg"></div>
+            <div class="gym__video-base">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/about-us-img2-mobile@1x.jpg, img/about-us-img2-mobile@2x.jpg">
+                <source media="(max-width: 1199px)" srcset="img/about-us-img2-tablet@1x.jpg, img/about-us-img2-tablet@2x.jpg">
+                <img class="gym__video-plug" src="img/about-us-img2@1x.jpg" srcset="img/about-us-img2@2x.jpg" alt="Фото тренажёрного зала" width="364" height="228">
+              </picture>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="tickets">
