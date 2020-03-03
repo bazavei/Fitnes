@@ -170,6 +170,7 @@
   }
 
   .main-block__wrapper {
+    flex-direction: column;
     width: 100%;
     padding-top: 69px;
   }
@@ -182,9 +183,11 @@
 
   .main-block__title-wrapper {
     min-width: 295px;
+    width: 295px;
   }
 
   .main-block__title {
+    text-align: right;
     font-size: 80px;
     line-height: 80px;
   }
