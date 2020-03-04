@@ -3,22 +3,34 @@
   background: $gradient;
 
   margin-top: -56px;
-  padding-bottom: 91px;
+  padding-bottom: 48px;
   padding-top: 56px;
-  z-index: -1;
+  // z-index: -1;
+  // background-image: url("../img/image-header@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: 65% 69%;
+  // background-size: auto;
 
   @include bebas;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 51px;
-    left: 563px;
-    width: 500px;
-    height: 556px;
-    background: url("../img/image-header@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 51px;
+  //   left: 563px;
+  //   width: 500px;
+  //   height: 556px;
+  //   background: url("../img/image-header@1x.jpg") no-repeat 0 0;
+  //   background-size: cover;
+  // }
+}
+
+.main-block__container {
+  background-image: url("../img/image-header@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 65% 8%;
+  background-size: initial;
+  padding-bottom: 43px;
 }
 
 .main-block__wrapper {
@@ -87,6 +99,15 @@
   padding: 21px 57px;
   margin-top: 48px;
   margin-left: auto;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-block__social-list {
@@ -114,15 +135,21 @@
   .main-block {
     margin-top: -64px;
     padding-top: 64px;
-    padding-bottom: 106px;
+    padding-bottom: 71px;
 
-    &::before {
-      width: 324px;
-      height: 390px;
-      top: 82px;
-      left: 51.953%;
-      background-image: url("../img/image-header-tablet@1x.jpg");
-    }
+    // &::before {
+    //   width: 324px;
+    //   height: 390px;
+    //   top: 82px;
+    //   left: 51.953%;
+    //   background-image: url("../img/image-header-tablet@1x.jpg");
+    // }
+  }
+
+  .main-block__container {
+    background-image: url("../img/image-header-tablet@1x.jpg");
+    background-position: 90% 60%;
+    padding-bottom: 34px;
   }
 
   .main-block__wrapper {
@@ -164,9 +191,13 @@
   .main-block {
     padding-bottom: 81px;
 
-    &::before {
-      display: none;
-    }
+    // &::before {
+    //   display: none;
+    // }
+  }
+
+  .main-block__container {
+    background-image: none;
   }
 
   .main-block__wrapper {
