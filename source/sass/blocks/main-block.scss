@@ -180,6 +180,7 @@
   .main-block__button {
     padding: 18px 32px;
     margin-top: 39px;
+    border-width: 4px;
   }
 
   .main-block__social-list {
@@ -189,7 +190,7 @@
 
 @media (max-width: $mobile-width) {
   .main-block {
-    padding-bottom: 81px;
+    padding-bottom: 46px;
 
     // &::before {
     //   display: none;

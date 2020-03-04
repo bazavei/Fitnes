@@ -1,6 +1,7 @@
 .tickets {
   background-color: $gray-background;
   padding-top: 123px;
+  padding-bottom: 120px;
 }
 
 .tickets__container {
@@ -65,7 +66,8 @@
   //   // background-color: $hover-color;
   // }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $blue-text;
     border-bottom: 2px solid $hover-color;
   }
@@ -86,6 +88,11 @@
 
   padding-top: 57px;
   padding-bottom: 68px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid red;
+  }
 }
 
 .tickets__tariff-title {
@@ -108,6 +115,7 @@
 .tickets__tariff-price {
   @include roboto-cond;
   text-align: center;
+  text-shadow: 1px 1px 1px $shadow-color;
   font-weight: 700;
   font-size: 60px;
   line-height: 150%;
@@ -126,4 +134,85 @@
   border-color: $blue-text;
   padding: 21px 43px;
   margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    background: $sec-gradient;
+    border-color: inherit;
+    color: $white-text;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .tickets {
+    padding-top: 101px;
+    padding-bottom: 57px;
+  }
+
+  .tickets__periods-list {
+    width: 50%;
+    padding: 27px 3px 0;
+  }
+
+  .tickets__period-item {
+    font-size: 18px;
+  }
+
+  .tickets__tariffs-list {
+    padding-top: 47px;
+    flex-direction: column;
+  }
+
+  .tickets__tariff-item {
+    width: 64.5%;
+    margin: 0 auto;
+    margin-bottom: 39px;
+    padding-bottom: 68px;
+  }
+
+  .tickets__tariff-description {
+    padding-top: 7px;
+  }
+
+  .tickets__tariff-price {
+    padding-top: 66px;
+    padding-bottom: 34px;
+  }
+
+  .tickets__tariff-buy {
+    padding: 23px 43px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .tickets {
+    padding-top: 74px;
+    padding-bottom: 30px;
+  }
+
+  .tickets__periods-list {
+    width: 100%;
+    padding: 18px 0 0;
+  }
+
+  .tickets__period-item {
+    font-size: 16px;
+  }
+
+  .tickets__tariff-item {
+    width: 100%;
+    padding-top: 44px;
+    padding-bottom: 61px;
+  }
+
+  .tickets__tariff-title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .tickets__tariff-price {
+    font-size: 48px;
+    padding-top: 58px;
+    padding-bottom: 27px;
+  }
 }

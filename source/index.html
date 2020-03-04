@@ -17,7 +17,6 @@
 
 <body>
   <main class="page-main">
-
     <section class="main-block">
       <header class="page-header">
         <div class="container">
@@ -124,6 +123,33 @@
             <a href="buy.html" class="button tickets__tariff-buy">Купить абонемент</a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="promo">
+      <h2 class="visually-hidden section-title">Промо</h2>
+      <div class="container">
+        <div class="promo__wrapper">
+          <div class="promo__banner">
+            <h3 class="promo__title">SUPER GAMES</h3>
+            <table class="promo__info-table">
+              <tr class="promo__info-row">
+                <td class="promo__info-data">Дата</td>
+                <td class="promo__info-data promo__info-data--bottom">7<span>Марта 2019</span></td>
+              </tr>
+              <tr class="promo__info-row">
+                <td class="promo__info-data">Время</td>
+                <td class="promo__info-data promo__info-data--bottom">12:00</td>
+              </tr>
+            </table>
+            <p class="promo__description">Ежегодные соревнования по CrossFit</p>
+            <a class="button promo__button" href="">заполнить заявку</a>
+          </div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/event-img-mobile@1x.jpg, img/event-img-mobile@2x.jpg">
+            <source media="(max-width: 1199px)" srcset="img/event-img-tablet@1x.jpg, img/event-img-tablet@2x.jpg">
+            <img class="promo__img" src="../img/event-img@1x.jpg" srcset="../img/event-img@2x.jpg" alt="Фотография события" width="660" height="500">
+          </picture>
+        </div>
       </div>
     </section>
   </main>

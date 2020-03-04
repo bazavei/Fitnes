@@ -1,0 +1,160 @@
+.promo {
+  padding-top: 121px;
+}
+
+.promo__wrapper {
+  @include flex;
+  color: $white-text;
+  width: 100%;
+  // justify-content: space-between;
+}
+
+.promo__banner {
+  @include flex;
+  justify-content: space-between;
+  position: relative;
+  width: 43.1%;
+  height: 500px;
+  padding-top: 79px;
+  padding-left: 78px;
+  padding-right: 77px;
+  padding-bottom: 86px;
+  background-color: $red-background;
+}
+
+.promo__title {
+  @include bebas;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+
+  width: 201px;
+  padding-top: 10px;
+}
+
+.promo__info-table table {
+  @include flex;
+  @include roboto-cond;
+  flex-direction: column;
+}
+
+.promo__info-row {
+  @include flex;
+  flex-direction: column;
+}
+
+.promo__info-data,
+.promo__info-data span {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+
+  &--bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+.promo__info-data span {
+  @include reset;
+  font-size: 14px;
+  display: block;
+  margin-right: auto;
+  padding: 6px 7px 0 7px;
+  width: 37px;
+}
+
+.promo__description {
+  position: absolute;
+  top: 54%;
+  right: 28%;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.promo__button {
+  color: $white-text;
+  padding-top: 27px;
+  padding-bottom: 21px;
+  width: 100%;
+  margin-top: auto;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    padding-top: 102px;
+  }
+
+  .promo__banner {
+    height: 292px;
+    padding: 44px 42px 49px 44px;
+  }
+
+  .promo__title {
+    font-size: 52px;
+    line-height: 52px;
+    width: 140px;
+    padding-top: 7px;
+  }
+
+  .promo__info-data {
+    font-size: 12px;
+    line-height: 150%;
+
+    &--bottom {
+      font-size: 24px;
+      line-height: 119%;
+    }
+  }
+
+  .promo__info-data span {
+    font-size: 10px;
+    padding: 0 4px 0;
+  }
+
+  .promo__description {
+    font-size: 12px;
+    top: 52.5%;
+    right: 21%;
+  }
+
+  .promo__img {
+    width: 386px;
+    height: 292px;
+  }
+
+  .promo__button {
+    font-size: 10px;
+    line-height: 12px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo {
+    padding-top: 65px;
+  }
+
+  .promo__banner {
+    width: 100%;
+  }
+
+  .promo__img {
+    width: 290px;
+  }
+}
